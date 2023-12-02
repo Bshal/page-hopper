@@ -1,0 +1,9 @@
+# Dependency directory
+node_modules/
+
+# Logs
+*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
