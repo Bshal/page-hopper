@@ -5,14 +5,14 @@ A simple and efficient pagination utility for arrays in JavaScript, suitable for
 ## Installation
 
 ```bash
-npm install your-package-name
+npm install page-hopper
 ```
 
 ## Usage
 ### Basic Usage
 
 ```javascript
-const paginate = require('your-package-name');
+const paginate = require('page-hopper');
 const collection = [/* your array data */];
 
 const pageNumber = 1;
@@ -41,7 +41,18 @@ const paginatedCollection = paginate(collection, pageNumber, numItemsPerPage, cu
 
 console.log(paginatedCollection);
 ```
+This will output:
 
+```javascript
+{
+  currentPage: 1,
+  perPage: 10,
+  total: 30,
+  totalPages: 3,
+  data: [/* paginated items */],
+  customKey: 'customValue'
+}
+```
 ## Features
 - Simple and easy to use.
 - No external dependencies.
